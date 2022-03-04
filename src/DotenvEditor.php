@@ -11,7 +11,6 @@ namespace Brotzka\DotenvEditor;
 use Illuminate\Support\Str;
 use Brotzka\DotenvEditor\Exceptions\DotEnvException;
 use Dotenv\Exception\InvalidPathException;
-use Illuminate\Support\Str;
 
 class DotenvEditor
 {
@@ -23,9 +22,9 @@ class DotenvEditor
     |
     |
      */
-    private $env;
-    private $backupPath;
-    private $autoBackup = false;
+    protected $env;
+    protected $backupPath;
+    protected $autoBackup = false;
 
     /**
      * DotenvEditor constructor
